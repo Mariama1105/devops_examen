@@ -1,0 +1,7 @@
+streamlit
+pandas
+plotly
+seaborn
+pytest
+ydata-profiling
+flake8
