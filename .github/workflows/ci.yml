@@ -1,52 +1,80 @@
-name: DevOps Pipeline
+# name: DevOps Pipeline
+
+# on:
+#   push:
+#     branches: [ "main" ]
+
+# jobs:
+
+#   test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v3
+
+#     - name: Install Python
+#       uses: actions/setup-python@v4
+#       with:
+#         python-version: 3.11
+
+#     - run: pip install -r requirements.txt
+
+#     - run: flake8 .
+
+#     - run: pytest tests/
+
+#   docker:
+#     needs: test
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v3
+
+#     - name: Login DockerHub
+#       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+#     - name: Build Image
+#       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/titanic-dashboard:latest .
+
+#     - name: Push Image
+#       run: docker push ${{ secrets.DOCKER_USERNAME }}/titanic-dashboard:latest
+
+#   deploy:
+#     needs: docker
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v3
+
+#     - name: Deploy
+#       run: docker-compose up -d
+
+#       #![CI](https://github.com/tonrepo/actions/workflows/ci.yml/badge.svg)
+
+name: CI DevOps Project
 
 on:
   push:
     branches: [ "main" ]
+  pull_request:
 
 jobs:
-
   test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Install Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-    - run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
 
-    - run: flake8 .
-
-    - run: pytest tests/
-
-  docker:
-    needs: test
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Login DockerHub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-
-    - name: Build Image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/titanic-dashboard:latest .
-
-    - name: Push Image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/titanic-dashboard:latest
-
-  deploy:
-    needs: docker
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Deploy
-      run: docker-compose up -d
-
-      #![CI](https://github.com/tonrepo/actions/workflows/ci.yml/badge.svg)
+      - name: Run tests
+        run: |
+          python -m pytest tests
