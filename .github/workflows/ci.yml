@@ -1,150 +1,3 @@
-# name: DevOps Pipeline
-
-# on:
-#   push:
-#     branches: [ "main" ]
-
-# jobs:
-
-#   test:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - uses: actions/checkout@v3
-
-#     - name: Install Python
-#       uses: actions/setup-python@v4
-#       with:
-#         python-version: 3.11
-
-#     - run: pip install -r requirements.txt
-
-#     - run: flake8 .
-
-#     - run: pytest tests/
-
-#   docker:
-#     needs: test
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - uses: actions/checkout@v3
-
-#     - name: Login DockerHub
-#       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-
-#     - name: Build Image
-#       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/titanic-dashboard:latest .
-
-#     - name: Push Image
-#       run: docker push ${{ secrets.DOCKER_USERNAME }}/titanic-dashboard:latest
-
-#   deploy:
-#     needs: docker
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - uses: actions/checkout@v3
-
-#     - name: Deploy
-#       run: docker-compose up -d
-
-#       #![CI](https://github.com/tonrepo/actions/workflows/ci.yml/badge.svg)
-
-
-
-
-# name: DevOps Pipeline
-
-# on:
-
-# push:
-
-# branches: [ "main" ]
-
-# env:
-
-# IMAGE_NAME: titanic-dashboard
-
-# FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
-# jobs:
-
-# test:
-
-# runs-on: ubuntu-latest
-
-# steps:
-
-# - uses: actions/checkout@v5
-
-# - name: Install Python
-
-# uses: actions/setup-python@v6
-
-# with:
-
-# python-version: 3.11
-
-# cache: pip
-
-# - name: Install dependencies
-
-# run: |
-
-# pip install -r requirements.txt
-
-# pip install flake8 pytest
-
-# - name: Lint
-
-# run: flake8 .
-
-# - name: Test
-
-# run: pytest tests/
-
-# docker:
-
-# needs: test
-
-# runs-on: ubuntu-latest
-
-# steps:
-
-# - uses: actions/checkout@v5
-
-# - name: Login DockerHub
-
-# run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-
-# - name: Pull cache (optionnel)
-
-# run: docker pull ${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:latest || true
-
-# - name: Build Image
-
-# run: docker build -t ${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:latest .
-
-# - name: Push Image
-
-# run: docker push ${{ secrets.DOCKER_USERNAME }}/$IMAGE_NAME:latest
-
-# deploy:
-
-# needs: docker
-
-# runs-on: ubuntu-latest
-
-# steps:
-
-# - uses: actions/checkout@v5
-
-# - name: Deploy
-
-# run: docker-compose up -d
-
-
 name: DevOps Pipeline Titanic
 
 on:
@@ -153,6 +6,7 @@ on:
 
 env:
   IMAGE_NAME: titanic-dashboard
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
 
@@ -190,15 +44,16 @@ jobs:
     needs: test
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5      # ✅ mis à jour
 
       - name: Generate report
         run: |
           echo "<h1>Rapport Titanic</h1>" > report.html
           echo "<p>Pipeline OK ✅</p>" >> report.html
 
-      - name: Upload artifact (simulate Nexus)
-        uses: actions/upload-artifact@v4
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4  # ✅ reste v4 mais ok pour Node24
         with:
           name: titanic-report
           path: report.html
@@ -211,7 +66,8 @@ jobs:
     needs: test
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5      # ✅ mis à jour
 
       - name: Login DockerHub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
@@ -233,6 +89,9 @@ jobs:
     needs: docker
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v5      # ✅ mis à jour
+
       - name: Deploy with docker-compose
         run: |
           echo "Simulated deploy..."
