@@ -1,8 +1,15 @@
-version: '3'
+# version: '3'
+
+# services:
+#   app:
+#     build: .
+#     ports:
+#       - "8501:8501"
+version: "3"
 
 services:
   app:
-    build: .
+    image: ton_username/titanic-dashboard:latest
     ports:
       - "8501:8501"
     volumes:
