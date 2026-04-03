@@ -113,7 +113,7 @@ jobs:
 
       - name: Upload to Nexus
         run: |
-          curl -v -u admin:admin123 \
+          curl -v -u admin:nafi198219 \
             --upload-file ./report/titanic-report.html \
             "http://localhost:8081/repository/titanic-reports/titanic-report-$(date +'%Y%m%d-%H%M%S').html"
 
