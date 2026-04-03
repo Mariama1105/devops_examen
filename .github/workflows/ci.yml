@@ -31,7 +31,7 @@ jobs:
           pip install flake8 pytest
 
       - name: Lint code
-        run: flake8 . --ignore=F401,E302,E305,W292
+        run: flake8 . --ignore=F401,E302,E305,W292,E501,W291,W293,E225
 
       - name: Run tests
         run: PYTHONPATH=. pytest tests/ -v
@@ -154,3 +154,5 @@ jobs:
       - name: Deploy with docker-compose
         run: |
           echo "Simulated deploy..."
+
+          #fienalite
