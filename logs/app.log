@@ -1,8 +1,136 @@
-{"event": "filter", "sex": "all", "class": "all"}
-{"event": "page_view"}
-{"event": "filter", "sex": "all", "class": "all"}
-{"event": "page_view"}
-{"event": "filter", "sex": "all", "class": "all"}
-{"event": "page_view"}
-{"event": "filter", "sex": "all", "class": "all"}
-{"event": "page_view"}
+{"event": "page_view", "timestamp": "2026-04-01T20:39:44.038612", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T20:39:46.641506", "sex": "all", "class": "2", "passengers_count": 184}
+{"event": "page_view", "timestamp": "2026-04-01T20:39:48.143221", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T20:39:53.772146", "sex": "all", "class": "3", "passengers_count": 491}
+{"event": "filter_applied", "timestamp": "2026-04-01T20:39:58.289387", "sex": "all", "class": "1", "passengers_count": 216}
+{"event": "filter_applied", "timestamp": "2026-04-01T20:40:00.613468", "sex": "all", "class": "2", "passengers_count": 184}
+{"event": "page_view", "timestamp": "2026-04-01T20:40:02.945358", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T20:40:03.392758", "sex": "male", "class": "2", "passengers_count": 108}
+{"event": "page_view", "timestamp": "2026-04-01T20:40:04.165454", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:06:34.939726", "sex": "female", "class": "all", "passengers_count": 314}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:06:41.453065", "sex": "female", "class": "3", "passengers_count": 144}
+{"event": "page_view", "timestamp": "2026-04-01T21:06:44.815706", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:06:48.225384", "sex": "female", "class": "3", "passengers_count": 144}
+{"event": "page_view", "timestamp": "2026-04-01T21:06:50.661417", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:06:53.237507", "sex": "female", "class": "1", "passengers_count": 94}
+{"event": "page_view", "timestamp": "2026-04-01T21:06:55.908621", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:00.554454", "sex": "female", "class": "2", "passengers_count": 76}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:04.706296", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:06.440931", "sex": "female", "class": "all", "passengers_count": 314}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:08.767797", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:10.758737", "sex": "female", "class": "1", "passengers_count": 94}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:13.055180", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:17.246647", "sex": "male", "class": "1", "passengers_count": 122}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:19.801045", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:22.451505", "sex": "male", "class": "3", "passengers_count": 347}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:24.688605", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:26.614173", "sex": "male", "class": "2", "passengers_count": 108}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:29.949670", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:31.875609", "sex": "male", "class": "all", "passengers_count": 577}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:34.980199", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:36.513066", "sex": "male", "class": "2", "passengers_count": 108}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:38.459137", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:40.332982", "sex": "male", "class": "all", "passengers_count": 577}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:42.472380", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:44.861617", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:48.419634", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:51.862247", "sex": "all", "class": "3", "passengers_count": 491}
+{"event": "page_view", "timestamp": "2026-04-01T21:07:55.724081", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:07:57.711329", "sex": "all", "class": "1", "passengers_count": 216}
+{"event": "page_view", "timestamp": "2026-04-01T21:08:02.975541", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:08:06.400712", "sex": "all", "class": "2", "passengers_count": 184}
+{"event": "page_view", "timestamp": "2026-04-01T21:08:10.377961", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:08:12.642035", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-01T21:08:16.437073", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:08:21.641628", "sex": "female", "class": "all", "passengers_count": 314}
+{"event": "page_view", "timestamp": "2026-04-01T21:08:26.117152", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:08:37.635429", "sex": "male", "class": "all", "passengers_count": 577}
+{"event": "page_view", "timestamp": "2026-04-01T21:08:41.365433", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:08:43.251645", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-01T21:08:46.896275", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:09:02.903926", "sex": "all", "class": "3", "passengers_count": 491}
+{"event": "page_view", "timestamp": "2026-04-01T21:09:07.815666", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:09:17.869336", "sex": "all", "class": "2", "passengers_count": 184}
+{"event": "page_view", "timestamp": "2026-04-01T21:09:21.475929", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-01T21:09:25.913383", "sex": "all", "class": "1", "passengers_count": 216}
+{"event": "page_view", "timestamp": "2026-04-01T21:09:29.675009", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T17:50:38.597475", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-02T17:50:46.090398", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T18:20:45.173707", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-02T18:20:47.455197", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T18:20:59.993684", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-02T18:21:01.812173", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T18:27:34.140298", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-02T18:27:36.114565", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T18:27:55.700069", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-02T18:27:58.043157", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:20:16.991895", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-02T19:20:22.067239", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:39.631649", "sex": "all", "class": "3", "passengers_count": 491}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:39.770015", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:42.528468", "sex": "all", "class": "1", "passengers_count": 216}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:42.688471", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:44.980849", "sex": "all", "class": "2", "passengers_count": 184}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:45.078000", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:47.622757", "sex": "all", "class": "all", "passengers_count": 891}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:47.794481", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:50.049368", "sex": "all", "class": "3", "passengers_count": 491}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:50.165885", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:53.697462", "sex": "all", "class": "1", "passengers_count": 216}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:53.790208", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:56.265333", "sex": "male", "class": "1", "passengers_count": 122}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:56.433921", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:35:58.477481", "sex": "male", "class": "all", "passengers_count": 577}
+{"event": "page_view", "timestamp": "2026-04-02T19:35:58.665805", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:00.897280", "sex": "male", "class": "3", "passengers_count": 347}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:01.051941", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:03.388296", "sex": "male", "class": "1", "passengers_count": 122}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:03.486057", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:06.547136", "sex": "male", "class": "2", "passengers_count": 108}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:06.687281", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:09.673505", "sex": "male", "class": "2", "passengers_count": 108}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:09.845086", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:12.421068", "sex": "male", "class": "3", "passengers_count": 347}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:12.546623", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:15.129454", "sex": "all", "class": "3", "passengers_count": 491}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:15.289640", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:17.868977", "sex": "female", "class": "3", "passengers_count": 144}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:17.989428", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:20.230521", "sex": "female", "class": "3", "passengers_count": 144}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:20.382999", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:22.375466", "sex": "female", "class": "all", "passengers_count": 314}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:22.495326", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:25.754150", "sex": "female", "class": "1", "passengers_count": 94}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:25.871534", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:28.436637", "sex": "female", "class": "2", "passengers_count": 76}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:28.596903", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:31.681524", "sex": "female", "class": "3", "passengers_count": 144}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:31.800427", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:34.184311", "sex": "male", "class": "3", "passengers_count": 347}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:34.278270", "page": "dashboard"}
+{"event": "filter_applied", "timestamp": "2026-04-02T19:36:36.292762", "sex": "male", "class": "all", "passengers_count": 577}
+{"event": "page_view", "timestamp": "2026-04-02T19:36:36.405202", "page": "dashboard"}
+{"event": "filter_applied", "sex": "all", "class": "all", "passengers_count": 891, "timestamp": "2026-04-02T20:41:35.609800"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:41:35.633204"}
+{"event": "filter_applied", "sex": "male", "class": "all", "passengers_count": 577, "timestamp": "2026-04-02T20:41:52.301367"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:41:52.321308"}
+{"event": "filter_applied", "sex": "male", "class": "1", "passengers_count": 122, "timestamp": "2026-04-02T20:41:55.703154"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:41:55.712837"}
+{"event": "filter_applied", "sex": "all", "class": "1", "passengers_count": 216, "timestamp": "2026-04-02T20:42:19.205959"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:42:19.214042"}
+{"event": "filter_applied", "sex": "all", "class": "1", "passengers_count": 216, "timestamp": "2026-04-02T20:42:21.437467"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:42:21.448311"}
+{"event": "filter_applied", "sex": "all", "class": "2", "passengers_count": 184, "timestamp": "2026-04-02T20:42:24.010131"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:42:24.018684"}
+{"event": "filter_applied", "sex": "all", "class": "3", "passengers_count": 491, "timestamp": "2026-04-02T20:42:27.638537"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:42:27.648083"}
+{"event": "filter_applied", "sex": "all", "class": "3", "passengers_count": 491, "timestamp": "2026-04-02T20:42:35.880382"}
+{"event": "page_view", "page": "survival_analysis", "timestamp": "2026-04-02T20:42:35.891802"}
+{"event": "filter_applied", "sex": "all", "class": "3", "passengers_count": 491, "timestamp": "2026-04-02T20:42:38.710530"}
+{"event": "page_view", "page": "passenger_profile", "timestamp": "2026-04-02T20:42:38.720140"}
+{"event": "filter_applied", "sex": "all", "class": "3", "passengers_count": 491, "timestamp": "2026-04-02T20:42:40.973429"}
+{"event": "page_view", "page": "raw_data", "timestamp": "2026-04-02T20:42:40.984876"}
+{"event": "filter_applied", "sex": "all", "class": "3", "passengers_count": 491, "timestamp": "2026-04-02T20:42:50.533370"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:42:50.543204"}
+{"event": "filter_applied", "sex": "all", "class": "all", "passengers_count": 891, "timestamp": "2026-04-02T20:44:31.291029"}
+{"event": "page_view", "page": "home", "timestamp": "2026-04-02T20:44:31.305337"}

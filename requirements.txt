@@ -1,7 +1,9 @@
-streamlit
+﻿streamlit
 pandas
 plotly
 seaborn
 pytest
-ydata-profiling
 flake8
+ydata-profiling
+requests
+numpystreamlit-option-menu

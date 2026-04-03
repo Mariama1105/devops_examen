@@ -1,23 +1,77 @@
-version: "3"
-
 services:
-  app:
-    image: ton_username/titanic-dashboard:latest
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.security.enrollment.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - es-data:/usr/share/elasticsearch/data
+    networks:
+      - titanic-network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.0
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - titanic-network
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.12.0
+    container_name: logstash
+    volumes:
+      - ./logs:/logs:ro
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+    depends_on:
+      - elasticsearch
+    networks:
+      - titanic-network
+    ports:
+      - "9600:9600"
+    restart: unless-stopped
+
+  nexus:
+    image: sonatype/nexus3:latest
+    container_name: nexus
+    ports:
+      - "8081:8081"
+    volumes:
+      - nexus-data:/nexus-data
+    environment:
+      - INSTALL4J_ADD_VM_PARAMS=-Xms512m -Xmx512m
+    networks:
+      - titanic-network
+    restart: unless-stopped
+
+  titanic-dashboard:
+    image: titanic-dashboard:latest
+    container_name: titanic-dashboard
     ports:
       - "8501:8501"
     volumes:
       - ./logs:/app/logs
-
-  elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.0
     environment:
-      - discovery.type=single-node
-    ports:
-      - "9200:9200"
-
-  kibana:
-    image: docker.elastic.co/kibana/kibana:8.12.0
-    ports:
-      - "5601:5601"
+      - ELASTICSEARCH_HOST=http://elasticsearch:9200
     depends_on:
       - elasticsearch
+    networks:
+      - titanic-network
+    restart: unless-stopped
+
+volumes:
+  es-data:
+  nexus-data:
+
+networks:
+  titanic-network:
+    driver: bridge
