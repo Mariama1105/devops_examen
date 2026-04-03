@@ -6,4 +6,5 @@ pytest
 flake8
 ydata-profiling
 requests
-numpystreamlit-option-menu
+numpy
+streamlit-option-menu
